@@ -45,7 +45,18 @@ function ayuda()
     try {
 
       x0.value=parseFloat(x0.value);
+      if(x0.value>100 )
+      {
+       alert("Se sugiere que x0 sea menor a 100 ya que por el ajuste automatico del eje va a ser dificil de ver la grafica"); 
+      }
+      else if(x0.value<-100)
+      {
+        alert("Se sugiere que x0 no sea menor a -100 ya que por el ajuste automatico del eje va a ser dificil de ver la grafica"); 
+      }
+      else
+      {
 
+      }
       
       if (sel.value=="Sin")         //senoidal-------------------------------------------------
       {
